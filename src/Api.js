@@ -39,15 +39,15 @@ const searchMovie = async(q) => {
 //   console.log(results);
 };
 
-const getTopRated = () => {
-    const options = {
-      method: 'GET',
-      url: `${process.env.REACT_APP_BASEURL}/movie/top_rated?apikey=${process.env.REACT_APP_APIKEY}`
-      headers: {
-        accept: 'application/json',
-        Authorization:
-          'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhODViZjcyZjcyNWZjMmE2Y2FjMzdmMGNmYjg3NmRhMCIsInN1YiI6IjY1ZDFmNzljZjk0NzViMDE2M2RhNjhhYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kZV2Xcl7EPjkzQ_5hjJ6H3Q2gCc_FstbPOXV71CsXoI',
-      },
-    };
-}
+// const getTopRated = () => {
+//     const options = {
+//       method: 'GET',
+//       url: `${process.env.REACT_APP_BASEURL}/movie/top_rated?apikey=${process.env.REACT_APP_APIKEY}`
+//       headers: {
+//         accept: 'application/json',
+//         Authorization:
+//           'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhODViZjcyZjcyNWZjMmE2Y2FjMzdmMGNmYjg3NmRhMCIsInN1YiI6IjY1ZDFmNzljZjk0NzViMDE2M2RhNjhhYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kZV2Xcl7EPjkzQ_5hjJ6H3Q2gCc_FstbPOXV71CsXoI',
+//       },
+//     };
+// }
 export { getMoviePopular, searchMovie };
